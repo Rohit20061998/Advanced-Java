@@ -7,10 +7,10 @@ import org.hibernate.cfg.Configuration;
 public class HelloHibernate{
 
 	public static void main(String[] args) {
-		SessionFactory seccionFactory=new Configuration().configure().buildSessionFactory();
-		Session seccion=seccionFactory.openSession();
+		SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
+		Session session=sessionFactory.openSession();
 		
 	System.out.println("Hello Hibru!!!");
-	seccion.close();
+	session.close();
 	}
 }
